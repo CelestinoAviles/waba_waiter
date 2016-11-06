@@ -1,0 +1,26 @@
+{
+  "name": "WabaTablet",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Aplicacion de tableta",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0",
+    "nodemon": "*"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "path": "^0.12.7",
+    "pg": "4.5.3",
+    "passport": "~0.2.1",
+    "passport-local": "~1.0.0",
+    "mongoose": "*",
+    "mongodb": "*"
+  },
+    "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "node server.js"
+  }
+}

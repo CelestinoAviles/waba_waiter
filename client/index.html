@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wabat">
+<head>
+  <title>Waba_Waiter</title>
+  <meta charset="utf-8">
+  <meta name="WabaTablet" content="width=device-width, initial-scale=1">
+
+   <title>Wabaw</title>
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/waba.css">
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
+    
+    <script src="wabat.module.js"></script>
+    <script src="wabat.config.js"></script>
+    <script src="inicio/inicio.module.js"></script>
+    <script src="inicio/inicio.component.js"></script>
+    <script src="entidad1/entidad1.module.js"></script>
+    <script src="entidad1/entidad1.component.js"></script>
+    <script src="entidad2/entidad2.module.js"></script>
+    <script src="entidad2/entidad2.component.js"></script>
+    <script src="mesas/mesas.module.js"></script>
+    <script src="mesas/mesas.component.js"></script>
+    <script src="mesas/mesas-listado.module.js"></script>
+    <script src="mesas/mesas-listado.component.js"></script>
+    <script src="mesas/mesas-detalle-camarero.module.js"></script>
+    <script src="mesas/mesas-detalle-camarero.component.js"></script>
+    <script src="tickets/ticket-linea-estado.module.js"></script>
+    <script src="tickets/ticket-linea-estado.component.js"></script>
+    <script src="opiniones/opiniones-listado.module.js"></script>
+    <script src="opiniones/opiniones-listado.component.js"></script>
+
+    <script src="productos/productos-listado.module.js"></script>
+    <script src="productos/productos-listado.component.js"></script>
+    <script src="productos/producto-opina.module.js"></script>
+    <script src="productos/producto-opina.component.js"></script>
+    <script src="productos/producto-detalle.module.js"></script>
+    <script src="productos/producto-detalle.component.js"></script>
+
+    <script src="pago/pago.module.js"></script>
+    <script src="pago/pago.config.js"></script>
+    <script src="pago/pago.component.js"></script>
+    <script src="pago/pago-efectivo.module.js"></script>
+    <script src="pago/pago-efectivo.component.js"></script>
+    <script src="pago/pago-paypal.module.js"></script>
+    <script src="pago/pago-paypal.component.js"></script>
+    <script src="pago/pago-tarjeta.module.js"></script>
+    <script src="pago/pago-tarjeta.component.js"></script>
+    
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+	  <a class="navbar-brand" href="http://www.laverdad.es"><img src="img/logo/001.jpg" height="60" width="60" alt="" /></a>
+
+	 </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li><a href="#!/inicio">Inicio</a></li>
+          <li><a href="#!/mesas">Mesas</a></li>
+          <li><a href="#!/mesasListado">MesasListado</a></li>
+          <li><a href="#!/productosListado">Productos</a></li>
+          <li><a href="#!/opinionesListado">Opiniones</a></li>
+     </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view-container">
+        <div ng-view></div>
+    </div>
+    
+</body>
+</html>
